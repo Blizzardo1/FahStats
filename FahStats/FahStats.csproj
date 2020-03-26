@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+<PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <UseWPF>true</UseWPF>
+        <AssemblyName>FahStats</AssemblyName>
+        <RootNamespace>FahStats</RootNamespace>
+        <LangVersion>preview</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Flurl.Http" Version="3.0.0-pre3" />
+        <PackageReference Include="HtmlAgilityPack" Version="1.11.23" />
+    </ItemGroup>
+
+   
+
+    <ItemGroup>
+      <Content Include="App.xaml" />
+    </ItemGroup>
+
+   
+
+    <ItemGroup>
+      <Compile Update="MainWindow.xaml.cs">
+        <DependentUpon>MainWindow.xaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>
